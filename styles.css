@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+:root {
+  --color-1: #4ac0ff;
+  --color-2: #96d8fc;
+  --color-3: black;
+  --size-text: 1.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, .flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: 'DM Serif Display', serif;
+  background-color: var(--color-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#card {
+  background-color: white;
+  width: 80%;
+  max-width: 20rem;
+  text-align: center;
+  padding: 2rem 0.5rem;
+  border-radius: 1rem;
+  box-shadow: -.1rem .1rem .6rem 0rem rgb(75, 75, 75);
+}
+
+#card img {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 60%;
+  border: 0.4rem solid var(--color-1);
+  border-radius: 100rem;
+  transition: transform .2s;
+}
+
+#card img:hover {
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
+  box-shadow: -.1rem .1rem .6rem 0rem #474747;
+}
+
+.card_title {
+  color: var(--color-1);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card_subtitle {
+  color: gray;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 1rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.8;
+  text-align: justify;
+}
+
+.social-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-right: 1rem;
+
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  fill: #4ac0ff;
+  border-radius: .6rem;
+  box-shadow: -.1rem .1rem .6rem 0rem rgb(75, 75, 75);
+  background: white;
+  margin: .3rem;
+  transition: 1s;
+}
+
+.social-btn span {
+  width: 0rem;
+  overflow: hidden;
+  transition: 1s;
+  text-align: center;
+  color: var(--color-3);
+}
+
+.social-btn:hover {
+  width: 9rem;
+  border-radius: .3rem;
+}
+
+.social-btn:hover span {
+  padding: 0.1rem;
+  width: max-content;
+}
