@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+:root {
+  --color-2: #ccffbd;
+  --color-1: #7eca9c;
+  --color-3: #40394a;
+  --color-4: #1c1427;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, .flex-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body {
+  font-family: 'DM Serif Display', serif;
+  background-color: var(--color-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#card {
+  background-color: white;
+  width: 80%;
+  max-width: 20rem;
+  text-align: center;
+  padding: 2rem 0.5rem;
+  border-radius: 1rem;
+  box-shadow: -.1rem .1rem .6rem 0rem rgb(75, 75, 75);
+}
+
+#card img {
+  max-width: 100%;
+  width: 60%;
+  border: 0.5rem solid var(--color-1);
+  border-radius: 100rem;
+  transition: transform .8s;
+}
+
+#card img:hover {
+  transform: scale(1.2); 
+  filter: grayscale(50%);
+}
+
+.card_title {
+  color: var(--color-1);
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.card_subtitle {
+  color: var(--color-3);
+  font-size: 1rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 1rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.8;
+  text-align: justify;
+}
+
+.social-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-right: 1rem;
+
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  color: white;
+  border-radius: .6rem;
+  background: var(--color-1);
+  margin: .3rem;
+  transition: 0.8s;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.social-btn span {
+  width: 0rem;
+  overflow: hidden;
+  transition: .8s;
+  text-align: center;
+  color: white;
+  font-size: 0rem;
+}
+
+.social-btn:hover {
+  width: 9rem;
+  border-radius: .3rem;
+  font-size: 1rem;
+}
+
+.social-btn:hover span {
+  padding: 0.1rem;
+  width: max-content;
+  font-size: 1rem;
+  margin: 0.3rem;
+}
+
+.url:link {
+  text-decoration: none;
+}
